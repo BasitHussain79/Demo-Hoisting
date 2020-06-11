@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+:root {
+  --color-primary: rgb(255, 0, 0);
+  --color-secondary: #333333;
+  --color-yellow: rgb(255, 255, 0);
+}
+
+/* Utiliy Classes */
+.text-primary {
+  color: var(--color-primary);
+}
+
+.logo {
+}
+
+.l-heading {
+  font-size: 7rem;
+  margin-bottom: 2rem;
+  line-height: 1.1;
+}
+
+.lead {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  line-height: 1.1;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--color-primary);
+  padding: 1.5rem;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.8rem;
+  margin-top: 1rem;
+}
+
+.btn:hover {
+  background: var(--color-secondary);
+  color: #fff;
+  /* transform: translateY(-0.5rem); */
+  /* padding: 1.6rem; */
+}
+
+/* Navbar */
+#navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background: var(--color-secondary);
+  color: #fff;
+  justify-content: space-between;
+  z-index: 1;
+  padding: 1rem;
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#navbar ul li a {
+  color: #fff;
+  padding: 1rem;
+  margin: 0 0.5rem;
+}
+
+#navbar ul li a:hover {
+  background: var(--color-primary);
+  border-radius: 0.5rem;
+}
+
+/* Showcase */
+#showcase {
+  background: linear-gradient(rgba(255, 0, 0, 0.6), rgba(255, 255, 0, 0.6)),
+    url("../img/3.jpg") no-repeat center center/cover;
+  height: 95vh;
+  color: #fff;
+  /* overflow-y: hidden; */
+}
+
+#showcase .showcase-content {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 3rem;
+}
